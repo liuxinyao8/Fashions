@@ -1,0 +1,28 @@
+ private void initfra(Fragment fragments){
+        if (manager ==null){
+            manager = getSupportFragmentManager();
+        }
+        FragmentTransaction transaction = manager.beginTransaction();
+
+        if (!fragments.isAdded()){
+            List<Fragment> fgs = manager.getFragments();
+            transaction.addToBackStack(null);
+            if (fgs.size()>0){
+                for (Fragment ff:fgs) {
+                    transaction.hide(ff);
+                }
+
+            }
+            transaction.add(R.id.fl,fragments);
+
+        }else {
+            List<Fragment> fgs = manager.getFragments();
+            if (fgs.size()>0){
+                for (Fragment fra:fgs) {
+                    transaction.hide(fra);
+                }
+            }
+            transaction.show(fragments);
+        }
+        transaction.commit();
+    }

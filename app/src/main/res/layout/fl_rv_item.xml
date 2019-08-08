@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/y70"
+        android:id="@+id/fl_rv_img1"
+        android:src="@mipmap/ic_launcher"
+        />
+    <TextView
+        android:id="@+id/fl_rv_tv1"
+        android:text="锅具"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x35"
+        android:gravity="center"
+        />
+
+</LinearLayout>

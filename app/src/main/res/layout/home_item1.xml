@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:layout_width="@dimen/x150"
+    android:layout_height="@dimen/x85"
+    android:src="@mipmap/loggion"
+    android:scaleType="centerCrop"
+    android:id="@+id/home_rv_im"/>
+    <TextView
+        android:layout_width="@dimen/x50"
+        android:layout_height="@dimen/x15"
+        android:layout_marginLeft="15dp"
+        android:textColor="#000000"
+        android:id="@+id/home_rv_tv1"
+        android:layout_marginTop="10dp"
+        android:text="ck品牌商"/>
+    <TextView
+        android:layout_width="@dimen/x30"
+        android:layout_height="@dimen/x15"
+        android:layout_below="@id/home_rv_tv1"
+        android:text="10元起"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/home_rv_tv2"
+        />
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#333333"
+        android:layout_height="@dimen/y130">
+        <ImageView
+            android:id="@+id/my_tx"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y100"
+            android:src="@mipmap/rx"
+            android:layout_marginTop="@dimen/y25"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/my_ddl"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y30"
+            android:layout_toRightOf="@id/my_tx"
+            android:layout_marginTop="@dimen/y60"
+            android:text="点击登陆"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/x30"
+            android:id="@+id/my_dl"
+            android:src="@mipmap/jt"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/my_rv"/>
+
+</LinearLayout>

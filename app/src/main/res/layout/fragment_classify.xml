@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.ClassifyFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x30"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:background="#CAC3C3"
+        android:drawableLeft="@mipmap/ic_action_action_search"
+        android:paddingLeft="@dimen/x30"
+        android:paddingTop="@dimen/x10"
+        android:text="商品搜索，共239款好物" />
+    <LinearLayout
+        android:layout_marginTop="@dimen/y10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <q.rorbin.verticaltablayout.VerticalTabLayout
+            android:id="@+id/fl_tablayout"
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:background="#F5EFEF"
+            app:indicator_width="1dp"
+            app:indicator_gravity="left"
+            app:tab_height="50dp"
+            android:visibility="visible"
+            app:tab_mode="scrollable">
+
+        </q.rorbin.verticaltablayout.VerticalTabLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x150"
+                android:id="@+id/fl_im"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:text="333333"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/fl_tv"
+                android:gravity="center"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fl_rv"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

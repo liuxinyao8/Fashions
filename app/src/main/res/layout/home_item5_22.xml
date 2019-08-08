@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:background="#DFD9D9"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/y150"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="@dimen/x5"
+        android:id="@+id/home_rv5_im"/>
+    <TextView
+        android:id="@+id/home_rv5_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="微软提供离开火箭"
+        android:layout_marginLeft="@dimen/x20"
+        android:textColor="#000000"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/home_rv5_tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:textColor="#FF0000"
+        android:textSize="15sp"
+        android:text="￥599"/>
+</LinearLayout>
